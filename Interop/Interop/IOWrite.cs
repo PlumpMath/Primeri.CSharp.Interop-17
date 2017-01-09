@@ -16,11 +16,20 @@ namespace Interop
 		{
 			try {
 
-				//Междинни проверки
+				//Подготовка
 				excel = InteropExcel.Application ();
-
 				if (excel == null) return false;
 
+				InteropExcel.Workbook workbook = excel.Workbooks.Add();
+				if (workbook == null) return false;
+
+				//Попълване на таблицата 
+
+
+				//Запаметяване и затваряне
+				workbook.SaveCopyAs( getPath () );
+				excel.DisplayAlerts = false;	//Изключваме всички съобщения на Excel
+				workbook.Close(); 
 				excel.Quit();
 				return true;
 			}
