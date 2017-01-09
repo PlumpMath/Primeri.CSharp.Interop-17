@@ -1,0 +1,13 @@
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\Interop.exe
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\Microsoft.Office.Interop.Excel.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\mscorlib.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\VsWebSite.Interop.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\EnvDTE.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\stdole.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\EnvDTE.xml
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normidna.nlp
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfc.nlp
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfd.nlp
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfkc.nlp
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfkd.nlp
+C:\aula\primeri.csharp.interop\Interop\Interop\obj\x86\Release\Interop.exe

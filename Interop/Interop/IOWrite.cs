@@ -17,13 +17,20 @@ namespace Interop
 			try {
 
 				//Подготовка
-				excel = InteropExcel.Application ();
+				excel = new InteropExcel.ApplicationClass ();
 				if (excel == null) return false;
+
+				excel.Visible = false;
 
 				InteropExcel.Workbook workbook = excel.Workbooks.Add();
 				if (workbook == null) return false;
 
+				InteropExcel.Worksheet sheet = (InteropExcel.Worksheet)workbook.Worksheets[1];
+				sheet.Name = "Таблица 1";
+
 				//Попълване на таблицата 
+
+
 
 
 				//Запаметяване и затваряне
@@ -32,9 +39,7 @@ namespace Interop
 				workbook.Close(); 
 				excel.Quit();
 				return true;
-			}
-			catch
-			{
+			} catch {
 			}
 			return false;
 		}
@@ -43,14 +48,7 @@ namespace Interop
 		{
 			try
 			{
-
-
-
-			}
-			catch
-			{
-
-
+			} catch {
 			}
 		}
 
@@ -65,7 +63,7 @@ namespace Interop
 
 		private string getPath()
 		{
-			return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Table.xlsx");
+			return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Table1.xlsx");
 		}
 	}
 }
