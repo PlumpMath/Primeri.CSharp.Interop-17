@@ -7,7 +7,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Interop\IOWrite.cs">
     <Files>
       <File FileName="Interop\Program.cs" Line="19" Column="20" />
-      <File FileName="Interop\IOWrite.cs" Line="20" Column="5" />
+      <File FileName="Interop\IOWrite.cs" Line="34" Column="15" />
       <File FileName="Interop\DataStruct.cs" Line="17" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
