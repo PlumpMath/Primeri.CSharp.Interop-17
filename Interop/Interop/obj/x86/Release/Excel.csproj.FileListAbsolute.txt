@@ -11,3 +11,7 @@ C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfd.nlp
 C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfkc.nlp
 C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\normnfkd.nlp
 C:\aula\primeri.csharp.interop\Interop\Interop\obj\x86\Release\Interop.exe
+C:\aula\primeri.csharp.interop\Interop\Interop\obj\x86\Release\Excel.csprojResolveAssemblyReference.cache
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\Office.dll
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\Office.xml
+C:\aula\primeri.csharp.interop\Interop\Interop\bin\Release\Microsoft.Office.Interop.Excel.xml

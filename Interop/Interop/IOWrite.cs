@@ -1,5 +1,6 @@
 ﻿using System;
-using InteropExcel = Microsoft.Office.Interop.Excel;	 
+using InteropExcel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
 
 namespace Interop
 {
@@ -10,6 +11,7 @@ namespace Interop
 
 		public IOWrite(DataStruct data)
 		{
+			_data = data;
 		}
 
 		public bool exportTable()
@@ -29,8 +31,13 @@ namespace Interop
 				sheet.Name = "Таблица 1";
 
 				//Попълване на таблицата 
+				int i = 1;
+				addRow(new DataRow("Първо име: ", "Фамилия: ", "Години: "), i++);
 
-
+				foreach (DataRow row in _data.table)
+				{
+					addRow(row, i++);
+				}
 
 
 				//Запаметяване и затваряне
@@ -38,16 +45,41 @@ namespace Interop
 				excel.DisplayAlerts = false;	//Изключваме всички съобщения на Excel
 				workbook.Close(); 
 				excel.Quit();
+
+				//Освобождаване на паметта от Excel
+
+				if (workbook != null) Marshal.ReleaseComObject(workbook);
+				if (sheet != null) Marshal.ReleaseComObject(workbook);
+				if (excel != null) Marshal.ReleaseComObject(workbook);
+
+				workbook = null;
+				sheet = null;
+				excel = null;
+
+				GC.Collect();
+
+
 				return true;
 			} catch {
 			}
 			return false;
 		}
 
-		public void addRow(DataRow _row)
+		public void addRow(DataRow _dataRow, int _indexRow )
 		{
 			try
 			{
+				InteropExcel.Range range;
+
+				range = excel.Range["A" + _indexRow.ToString(), "A" + _indexRow.ToString()];
+				range.Value2 = _dataRow.firstName;
+
+				range = excel.Range["B" + _indexRow.ToString(), "B" + _indexRow.ToString()];
+				range.Value2 = _dataRow.lastName;
+
+				range = excel.Range["C" + _indexRow.ToString(), "C" + _indexRow.ToString()];
+				range.Value2 = _dataRow.age;
+
 			} catch {
 			}
 		}
