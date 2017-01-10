@@ -4,11 +4,12 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Interop\IOWrite.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutoCADLines\MyClass.cs">
     <Files>
       <File FileName="Interop\Program.cs" Line="19" Column="20" />
       <File FileName="Interop\IOWrite.cs" Line="34" Column="15" />
       <File FileName="Interop\DataStruct.cs" Line="17" Column="3" />
+      <File FileName="AutoCADLines\MyClass.cs" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Excel PreferredExecutionTarget="MonoDevelop.Default" />

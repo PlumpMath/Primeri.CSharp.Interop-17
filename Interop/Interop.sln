@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel", "Interop\Excel.csproj", "{D667D0FC-AD58-485B-A847-17C647DEC8EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCADLines", "AutoCADLines\AutoCADLines.csproj", "{390122F5-1F49-4D19-A4EA-C20149B12A18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{D667D0FC-AD58-485B-A847-17C647DEC8EB}.Debug|x86.Build.0 = Debug|x86
 		{D667D0FC-AD58-485B-A847-17C647DEC8EB}.Release|x86.ActiveCfg = Release|x86
 		{D667D0FC-AD58-485B-A847-17C647DEC8EB}.Release|x86.Build.0 = Release|x86
+		{390122F5-1F49-4D19-A4EA-C20149B12A18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{390122F5-1F49-4D19-A4EA-C20149B12A18}.Debug|x86.Build.0 = Debug|Any CPU
+		{390122F5-1F49-4D19-A4EA-C20149B12A18}.Release|x86.ActiveCfg = Release|Any CPU
+		{390122F5-1F49-4D19-A4EA-C20149B12A18}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
